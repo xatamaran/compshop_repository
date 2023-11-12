@@ -501,42 +501,22 @@ html {
   font-size: 16px;
   line-height: 1.2;
   font-weight: normal;
-
   color: #000;
 }
-.header {
-  background: #acacac;
+/*--------------------------------------------*/
+.contact_information {
+  background-color: #585858;
 }
-
+.navigational_information {
+  background-color: #333333;
+}
+/*-------------------------------------------*/
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
-.header_box {
-  flex-direction: column;
-  height: 120px;
-}
-.contact_information {
-  height: 74px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.navigational_information {
-  height: 46px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.contact_information1 {
-  background-color: #585858;
-}
-.navigational_information1 {
-  background-color: #333333;
-}
-.inside1 {
+/*-------------------------------*/
+.contact_inside {
   height: 74px;
   display: flex;
   flex-wrap: wrap;
@@ -544,7 +524,7 @@ html {
   justify-content: space-between;
   align-content: center;
 }
-.inside2 {
+.navigational_inside {
   height: 46px;
   display: flex;
   flex-wrap: wrap;
@@ -552,6 +532,7 @@ html {
   justify-content: space-between;
   align-content: center;
 }
+/*------------------------------*/
 .contacts {
   display: flex;
   flex-wrap: wrap;
@@ -565,13 +546,6 @@ html {
   height: 27px;
   width: 122px;
 }
-.call_back_img {
-  float: left;
-}
-.telegram_img {
-  float: left;
-}
-
 .call_back > p {
   font-family: Inter;
   font-size: 10px;
@@ -588,11 +562,12 @@ html {
   letter-spacing: -0.04em;
   text-align: left;
 }
-
 .call_back_img {
+  float: left;
   margin-right: 11.6px;
 }
 .telegram_img {
+  float: left;
   margin-right: 11px;
 }
 a {
@@ -601,8 +576,8 @@ a {
 .telephone {
   color: #ffffff;
 }
-
 .zamovlenya,
 .zamovlenya_telegram {
   color: #f88805;
 }
+/*--------------------------------*/

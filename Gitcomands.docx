@@ -1,0 +1,26 @@
+git config --global usar.name "Uriy" -- читати, змінювати конфігурації
+git config --global usar.email "ura8127@gmail.com" -- читати, змінювати конфігурації
+
+cd (folder) -- зміна дерикторії
+git init -- перетворення папки в репозиторій
+
+github.com -- логін ura8127@gmail.com, пароль Xa2amara9
+
+git remote add origin git@github.com:xatamaran/compshop_repository.git -- обєднати локальний репозиторій та віддалений репозиторій
+
+cd (folder) -- зміна дерикторії
+
+git clone git@github.com:xatamaran/compshop_repository.git -- скачати репозиторій
+
+git status -- показує статус всіх незакомічених змін в локальеому репозиторії
+
+git add index.html/. -- вибір файлів які будуть закомічені файл/вибрана дерикторія
+
+git commit -m "message" -- збереження всіх файлів які знаходяться в індексі на локальний репозиторій
+
+git log -- показує історію всіх комітів
+
+git checkout heshcommit -- повернення до попередньої версії
+
+git push origin master -- збереження всіх файлів на віддалений репозиторій
+
