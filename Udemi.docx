@@ -1,0 +1,134 @@
+HyperText Markup Language
+----------------------------№13-----------------------------
+<h1 (HTML Тег) class (Атрибут) = "red-text" (Значення)>Hello World (контент)</h1> (Елемент) (заголовок h1 to h6) 
+----------------------------№14----------------------------
+<p></p> (Параграф розділяє текст) 
+----------------------------№15----------------------------
+<hr /> (Горизонтальне правило (лінія)) 
+<br /> (Переносить текст в інший рядок)
+----------------------------№18----------------------------
+<ul> (UnOrder List(.))
+<li>Milk</li>
+<li>Eggs</li>
+</ul>
+<ol> (Order List(1,2,3))
+<li>Milk</li>
+<li>Eggs</li>
+</ol>
+----------------------------№20----------------------------
+<a href="url">Kontent</a> (Anchor Elemens(Hyper Link))
+----------------------------№21----------------------------
+<img src="https://picsum.photos/200" alt="alternative text desccription" /> (Image Element)
+----------------------------№25----------------------------
+/Project/Image/cat.png (Relative File Path)
+../essay.cocx (попередня дерикторія)
+./dog.png (дерикторія в якій знаходишся)
+./Image/cat.png (вибір папки а потім зображення)
+
+
+
+
+
+CSS
+------------Element Selector-----------------------
+h1 (CSS Selector) (HTML тег) {
+color: blue (Property: value)
+}
+------------Class Selector-----------------------
+.red-heading (Class Selector) {
+color: blue (Property: value)
+}
+------------Id Selector-----------------------
+#main (id Selector) {
+color: blue (Property: value)
+}
+------------Attribute Selector-----------------------
+p (HTML елемент) [draggable="false"] (Атрибут) {
+color: blue (Property: value)
+}
+------------Universal Selector-----------------------
+* (вибрати все)  {
+color: blue (Property: value)
+}
+
+---------------------------------------------------------
+-------------Cascading Stale Sheets------------------------
+Position
+li {
+  color: red; (3)
+  color: blue; (2)
+}
+li {color: red;} (1)
+
+Speceficity
+li {color: red;} (4)
+.first-class {color: red;} (3)
+li [draggable] {color: red;} (2)
+#first-id {color: red;} (1)
+
+Type
+<link ref="stylesheet" href="./style.css"> (3)
+<style> </style> (2)
+<h1 style=" ">Hello</h1> (1)
+
+Importance
+color: red; (2)
+color: green !Importance; (1)
+---------------------------------------------------------
+-------------Responsive web design------------------------
+Media query 
+@media (max-width: 600px) {
+  /* CSS ширина екрану не перевищує або рівна 600 px */
+}
+---------------------------------------------------------
+CSS Grid
+<div class="grid-container">
+  <div class="first card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+</div>
+
+.grid-container {
+    display: grid;
+    grid-template-colums: 1fr 1 fr;
+    grid-template-rows: 100px 200px 200px;
+    gap: 30px;
+}
+.first {
+  grid-colums: span 2;
+}
+.card {
+  background-color: blue;
+}
+
+CSS Flexbox
+<div class="flex-container">
+  <div class="first card"></div>
+  <div class="second card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+  <div class="card"></div>
+</div>
+
+.flex-container {
+    display: flex;
+    grid-template-colums: 1fr 1 fr;
+    grid-template-rows: 100px 200px 200px;
+    gap: 30px;
+}
+.card {
+  background-color: blue;
+  border: 30px solid white;
+  height: 100px;
+  flex: 1;
+}
+.first {
+  flex: 2;
+}
+.second {
+  flex: 0.5;
+}
+
+Bootstrap Framework 12колонок
