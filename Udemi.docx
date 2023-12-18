@@ -7,11 +7,11 @@ HyperText Markup Language
 <hr /> (Горизонтальне правило (лінія)) 
 <br /> (Переносить текст в інший рядок)
 ----------------------------№18----------------------------
-<ul> (UnOrder List(.))
+<ul> (UnOrder List(. крапка))
 <li>Milk</li>
 <li>Eggs</li>
 </ul>
-<ol> (Order List(1,2,3))
+<ol> (Order List(1,2,3 нумерація))
 <li>Milk</li>
 <li>Eggs</li>
 </ol>
@@ -24,35 +24,90 @@ HyperText Markup Language
 ../essay.cocx (попередня дерикторія)
 ./dog.png (дерикторія в якій знаходишся)
 ./Image/cat.png (вибір папки а потім зображення)
+----------------------------№29----------------------------
+GitHub Host
 
 
 
 
 
-CSS
-------------Element Selector-----------------------
+
+
+
+
+
+Cascading Style Sheets
+----------------------------№33----------------------------
+Inline
+<html (Тег) style (Атрибут)="color: (Property) blue" (Значення)></html>
+
+Internal
+<html><head><style>html (Selector) {color: blue;}</style></head></html>
+
+External
+<html><head><link rel="stylesheet" (Relationship) href="./styles.css" (Location) /></head></html>
+
+
+----------------------------№34----------------------------
+Element Selector
 h1 (CSS Selector) (HTML тег) {
 color: blue (Property: value)
 }
-------------Class Selector-----------------------
+
+Class Selector
 .red-heading (Class Selector) {
 color: blue (Property: value)
 }
-------------Id Selector-----------------------
+
+Id Selector
 #main (id Selector) {
 color: blue (Property: value)
 }
-------------Attribute Selector-----------------------
+
+Attribute Selector
 p (HTML елемент) [draggable="false"] (Атрибут) {
 color: blue (Property: value)
 }
-------------Universal Selector-----------------------
+
+Universal Selector
 * (вибрати все)  {
 color: blue (Property: value)
 }
 
----------------------------------------------------------
--------------Cascading Stale Sheets------------------------
+----------------------------№38----------------------------
+colorhunt.co - Палітра кольорів для сайту
+color - Колір слів
+background-color - Колір беграунд
+
+----------------------------№39----------------------------
+Font Properties
+h1 {
+  color: blue; - Колір слів
+  font-weight: bold;
+
+  font-size: 20px; (1px -- 1/96th inch), (1pt -- 1/72nd inch), (1em -- 100% of parent), (1rem -- 100% of root)
+
+  font-family: sans-serif; (fonts.google.com)
+
+  text-align: center
+}
+
+----------------------------№41----------------------------
+height: 100px; or 100%;
+width: 100px;
+border: 10px (ширина) solid (стиль) black (колір);
+border-top: 20px;
+border-width: 10px (верхній) 10px (правий) 20px (нижній) 30px (лівий);
+border-width: 10px (верхній, нижній) 10px (правий, лівий); 
+padding: 20px; (проміжок між елементом та краєм)
+pamargin: 20px; (проміжок між краєм та іншим елементом)
+
+Content Division Element <div></div>
+
+
+-----------------------------43------------------------
+Cascading Stale Sheets
+
 Position
 li {
   color: red; (3)
@@ -74,6 +129,13 @@ Type
 Importance
 color: red; (2)
 color: green !Importance; (1)
+
+
+
+
+
+
+
 ---------------------------------------------------------
 -------------Responsive web design------------------------
 Media query 
