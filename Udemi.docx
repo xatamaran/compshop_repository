@@ -130,6 +130,37 @@ Importance
 color: red; (2)
 color: green !Importance; (1)
 
+-----------------------------44------------------------
+Combining CSS Selectors
+<p>Text</p>
+<div class="bpox inner-box">
+<p>Second text</p>
+</div>
+
+p{
+  color: yellow;
+}
+.inner-box p (нащадок){
+  color: white;
+}
+.inner-box, #id {
+  color: white;
+}
+.inner-box (Батько)> p (Дитина) {
+  color: white;
+}
+p.inner-box#id {
+  color: white;
+}
+
+-----------------------------45------------------------
+CSS Position
+position: static
+
+
+
+
+
 
 
 
