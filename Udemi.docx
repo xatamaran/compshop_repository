@@ -28,6 +28,8 @@ HyperText Markup Language
 GitHub Host
 
 
+<div>Hello World</div> (Блок на всю ширину екрана)
+<span>Beautiful</span> (влінію)
 
 
 
@@ -38,7 +40,7 @@ GitHub Host
 
 Cascading Style Sheets
 ----------------------------№33----------------------------
-Inline
+Inline Підключення CSS до HTML
 <html (Тег) style (Атрибут)="color: (Property) blue" (Значення)></html>
 
 Internal
@@ -49,7 +51,7 @@ External
 
 
 ----------------------------№34----------------------------
-Element Selector
+Element Selector  Параметри CSS до HTML
 h1 (CSS Selector) (HTML тег) {
 color: blue (Property: value)
 }
@@ -80,7 +82,7 @@ color - Колір слів
 background-color - Колір беграунд
 
 ----------------------------№39----------------------------
-Font Properties
+Font Properties Шрифти та розмір букв
 h1 {
   color: blue; - Колір слів
   font-weight: bold;
@@ -93,7 +95,8 @@ h1 {
 }
 
 ----------------------------№41----------------------------
-height: 100px; or 100%;
+Параметри та значення в CSS
+height: 100px; or 100%;      
 width: 100px;
 border: 10px (ширина) solid (стиль) black (колір);
 border-top: 20px;
@@ -106,7 +109,7 @@ Content Division Element <div></div>
 
 
 -----------------------------43------------------------
-Cascading Stale Sheets
+Cascading Stale Sheets Каскадне застосування параметрів
 
 Position
 li {
@@ -131,7 +134,7 @@ color: red; (2)
 color: green !Importance; (1)
 
 -----------------------------44------------------------
-Combining CSS Selectors
+Combining CSS Selectors  Один або декілька параметрів CSS
 <p>Text</p>
 <div class="bpox inner-box">
 <p>Second text</p>
@@ -154,20 +157,44 @@ p.inner-box#id {
 }
 
 -----------------------------45------------------------
-CSS Position
-position: static
+CSS Position  Позиція елементу відносно попереднього
+position: static; (звичайне положення за замовчуванням)
+
+position: relative; (віддаляє від звичайного положення за замовчуванням на 50 рх)
+left:50px;
+top:50px;
+
+position: absolute; (позиція відносно до попереднього дів з relative або до верхнього лівого кута(рухається))
+----
+style="z-index: -1;"
+-----
+position: fixed; (позиція  до верхнього лівого кута браузера (нерухомо))
+
+-----------------------------48------------------------
+Розміщення елементів в рядок та блоки на весь розмір браузера
+
+.h1 {
+  display: inline; (Елементи розміщаються на одній лінії, не можливо вказати розмір, розмір є контент)
+  display: inline-block;
+  display: block;(Елементи розтягується на всю ширину браузера)
+  display: none; (елемент зникає)
+}
+
+-----------------------------49------------------------
+Обтікання картинки зліва або зправа
+img {
+  float: left;
+}
+img {
+  float: right;
+}
+p {
+  clear: lrft; (відміняє float)
+  clear: both;
+}
 
 
-
-
-
-
-
-
-
-
-
----------------------------------------------------------
+-----------------------------50----------------------------
 -------------Responsive web design------------------------
 Media query 
 @media (max-width: 600px) {
@@ -225,3 +252,56 @@ CSS Flexbox
 }
 
 Bootstrap Framework 12колонок
+
+
+-----------------------------51----------------------------
+Media query 
+@media (min-width: 600px) and (max-width: 900px) {
+  /* CSS для екрану між 600 та 900 */
+  .second {
+  flex: 0.5;
+}
+}
+@media screen (orientation: landscape)  {
+  /* CSS для телефонів */
+}
+
+-----------------------------54----------------------------
+display: flex;  (контейнер на весь розмір монітору (всередині флексбокс розмір всіх елементів залежить від їх контенту))
+gap: 10px;
+display: inline-flex;  (контейнер має розмір в залежності від контенту)
+
+-----------------------------55----------------------------
+flex-direction: row; (напрямок зліва на право)
+flex-direction: column; (напрямок зверху до низу)
+
+flax-basis: 100px; (розтягує дитячий контейнер)
+
+-----------------------------56----------------------------
+.green {
+  order: 1; (переміщає елементи вперед відносно попередніх елементів (за замовчуванням всі елементи мають order: 0))
+
+  flex-wrap: nowrap; (застосовується в батьківському контейнері) (стоїть за замовчуванням і недозволяє переміщати елементи на новий рядок, а виходить за межі екрану)
+  flex-wrap: wrap;
+
+  justify-content: flex-end; (прибиває контент до правого краю)
+  justify-content: flex-start;
+  justify-content: flex-center;(контент по центру)
+  justify-content: space-between;(ставить проміжки між контентом)
+
+  align-item: flex-start; (вказує де буде починатися контент)
+  height: 70vh; (розтягує коробку до низу на процент)
+  align-self: flex-start; (дозволяє один елемент розмістити інакше від попередніх (застосовується в дитячому контейнері))
+}
+
+-----------------------------57----------------------------
+Розміра контенту
+Content width < flex-basis < min/max-width
+
+flax-basis: 100px;
+flex-grow: 1; (заповняє весь простір)
+flexshrink: 1; (обрізає)
+
+
+css-tricks.com/sippets/css/a-guide-to-flexbox/
+developer.mozila.com
