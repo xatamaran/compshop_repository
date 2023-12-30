@@ -103,7 +103,7 @@ border-top: 20px;
 border-width: 10px (верхній) 10px (правий) 20px (нижній) 30px (лівий);
 border-width: 10px (верхній, нижній) 10px (правий, лівий); 
 padding: 20px; (проміжок між елементом та краєм)
-pamargin: 20px; (проміжок між краєм та іншим елементом)
+margin: 20px; (проміжок між краєм та іншим елементом)
 
 Content Division Element <div></div>
 

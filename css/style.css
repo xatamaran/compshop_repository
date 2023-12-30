@@ -631,49 +631,13 @@ html {
   justify-content: space-between;
   height: 46px;
 }
-.catalog {
-  width: 163px;
-  height: 30px;
-  margin-right: 2px;
-  top: 82px;
-  left: 105px;
-  padding: 7px, 22px, 7px, 22px;
-  border-radius: 4px;
-  gap: 10px;
-  background-color: #f88805;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: left;
-  text-decoration: none;
-}
-.catalog:hover,
-.catalog:focus,
-.catalog:active {
-  background-color: #f86205;
-  margin-left: 2px;
-  margin-top: 2px;
-  margin-right: 0;
-}
-.logo_catalog {
-  margin-left: 20px;
-  margin-right: 10px;
-}
-.p_catalog {
-  font-family: Inter;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 15px;
-  letter-spacing: -0.02em;
-  text-align: left;
-  color: #ffffff;
-}
+
 /*---------------Пошук-----------------------------*/
 .p_search {
   display: flex;
   flex-wrap: wrap;
 
-  width: 731px;
+  width: 761px;
 
   height: 30px;
   border-radius: 4px;
@@ -683,7 +647,7 @@ html {
   background-size: 20px;
   border: 0;
 
-  width: 700px;
+  width: 730px;
 
   height: 30px;
   border-radius: 4px 0px 0px 4px;
@@ -718,8 +682,172 @@ html {
   background-color: #f2f2f2;
   margin-top: 120px;
 }
+.catalog_of_goods {
+  background-color: #f2f2f2;
+  position: fixed;
+  top: 120px;
+  left: auto;
+  width: 100%;
+
+  height: 69px;
+  width: 1226px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter {
+  height: 69px;
+  width: 133px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.horizontal_line {
+  margin-left: 15px;
+  height: 50px;
+  width: 2px;
+  background-color: #1796d07c;
+}
+.product_catalog {
+  height: 69px;
+  width: 1076px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.goods {
+  padding-top: 69px;
+}
 /*---------------Підвал-----------------------------*/
 .futer {
   height: 428px;
   background-color: #333333;
+}
+
+/*----------------Кнопка (пошук товарів)--------------------*/
+.catalog {
+  width: 163px;
+  height: 30px;
+  margin-right: 2px;
+  top: 82px;
+  left: 105px;
+  padding: 7px, 22px, 7px, 22px;
+  border-radius: 4px;
+  gap: 10px;
+  background-color: #f88805;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  text-decoration: none;
+}
+
+.catalog:hover,
+.catalog:focus {
+  background-color: #f86205;
+}
+
+.catalog:active {
+  background-color: #f86205;
+  margin-left: 2px;
+  margin-top: 2px;
+  margin-right: 0;
+}
+.logo_catalog {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.p_catalog {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ffffff;
+}
+
+/*----------------Кнопка (фільтр)--------------------*/
+
+.filter_link {
+  width: 101px;
+  height: 27px;
+  top: 141px;
+  left: 298px;
+  padding: 6px, 20px, 6px, 20px;
+  border-radius: 28px;
+  border: 2px;
+  gap: 10px;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+
+  border: 2px solid #1796d07c;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+}
+
+.p_filter_link {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+  color: #333333;
+}
+.filter_link:hover,
+.filter_link:focus,
+.filter_link:active {
+  background: linear-gradient(0deg, #1796d07c, #1796d07c);
+}
+
+/*----------------Кнопка (контент)--------------------*/
+
+.product_catalog_link {
+  width: 101px;
+  height: 27px;
+  top: 141px;
+  left: 298px;
+  padding: 6px, 20px, 6px, 20px;
+  border-radius: 28px;
+  border: 2px;
+  gap: 10px;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+
+  border: 2px solid #f8880580;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+}
+
+.p_link {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+  color: #333333;
+}
+.product_catalog_link:hover,
+.product_catalog_link:focus,
+.product_catalog_link:active {
+  background: linear-gradient(
+    0deg,
+    rgba(248, 136, 5, 0.5),
+    rgba(248, 136, 5, 0.5)
+  );
 }
